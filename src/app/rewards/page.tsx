@@ -224,7 +224,7 @@ export default function RewardsPage() {
               key={opt.value}
               onClick={() => setRange(opt.value)}
               className={`px-4 py-2.5 rounded-xl text-sm font-medium transition-colors ${
-                range === opt.value && range !== "custom"
+                range === opt.value
                   ? "bg-amber-500 text-slate-900"
                   : "bg-slate-800/80 text-slate-400 hover:text-white border border-slate-700/50"
               }`}

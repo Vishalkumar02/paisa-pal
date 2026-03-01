@@ -44,7 +44,7 @@ export default function BudgetPage() {
   const { daily: dailyBudget, daysLeft } =
     monthlyBudget > 0
       ? getDynamicDailyBudget(monthlyBudget, monthSpent)
-      : { daily: 0, remaining: 0, daysLeft: 0 };
+      : { daily: 0, daysLeft: 0 };
 
   const handleSave = () => {
     const catBudgets: Record<string, number> = {};

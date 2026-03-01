@@ -40,7 +40,7 @@ export default function DashboardPage() {
   const { daily: dailyBudget, daysLeft } =
     monthlyBudget > 0 && remaining > 0
       ? getDynamicDailyBudget(monthlyBudget, monthTotal)
-      : { daily: 0, remaining: 0, daysLeft: 0 };
+      : { daily: 0, daysLeft: 0 };
 
   const recentExpenses = [...expenses]
     .sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime())
