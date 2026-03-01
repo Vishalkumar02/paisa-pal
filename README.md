@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Paisa Pal - Expense Tracker
+
+A mobile-first expense tracking app built with Next.js. Track your spending, set budgets, earn coins when you save, and understand your habits—no boring spreadsheets.
+
+**Paisa Pal** — Your money friend. Track, save, and stay on budget.
+
+*Why this name?* "Paisa" means money in Hindi; "Pal" means friend. Paisa Pal is your friendly companion for managing finances.
+
+📖 **[Full Documentation](DOCUMENTATION.md)** – Detailed guide to features, architecture, data models, and how everything works.
+
+## Features
+
+- **Easy expense entry** – Quick-add with amount, category, date, and optional note. One-tap quick amounts (₹50, ₹100, etc.)
+- **Totals** – Day, week, month, and year spending at a glance
+- **Categories** – 9 categories (Food, Transport, Shopping, Entertainment, Bills, Health, Education, Personal, Other)
+- **Insights** – Pie charts and category breakdown for week/month/year
+- **Budgeting** – Set overall monthly budget and optional per-category limits
+- **Coin rewards** – Earn 1 coin per rupee saved when you stay under budget (awarded when you open the app for previous day/month)
+- **Over-budget analysis** – See when and how much you exceeded budget, with daily spending charts
+
+## Tech Stack
+
+- Next.js 16 (App Router)
+- TypeScript
+- Tailwind CSS
+- Recharts (pie & bar charts)
+- date-fns
+- localStorage for persistence
 
 ## Getting Started
 
-First, run the development server:
-
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) and view on your phone or use Chrome DevTools mobile view.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Deploy
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Deploy to Vercel for free:
 
-## Learn More
+```bash
+npm run build
+```
 
-To learn more about Next.js, take a look at the following resources:
+Then connect your repo to [Vercel](https://vercel.com) for automatic deployments.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Data
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+All data is stored in your browser's localStorage. No backend or account required. Your data stays on your device.
