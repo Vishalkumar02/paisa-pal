@@ -36,16 +36,6 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) and view on your phone or use Chrome DevTools mobile view.
 
-## Deploy
-
-Deploy to Vercel for free:
-
-```bash
-npm run build
-```
-
-Then connect your repo to [Vercel](https://vercel.com) for automatic deployments.
-
 ## Data
 
 All data is stored in your browser's localStorage. No backend or account required. Your data stays on your device.
